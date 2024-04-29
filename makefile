@@ -1,16 +1,16 @@
-C_FILES = 					 \
-	bounded-buffer.c 	 \
-	co-editor.c				 \
-	dispatcher.c			 \
-	main.c						 \
-	producer.c				 \
-	read-config.c			 \
-	screen-manager.c   \
-	unbounded-buffer.c \
+C_FILES =                \
+	bounded-buffer.c     \
+	co-editor.c          \
+	dispatcher.c         \
+	main.c               \
+	producer.c           \
+	read-config.c        \
+	screen-manager.c     \
+	unbounded-buffer.c   \
 
 FLAGS = -Wall -g -lpthread -std=gnu99
 
-OUT_FILE = ex3.out
+OUT_FILE = main
 
 RUN_ARGS = conf.txt
 
@@ -28,4 +28,4 @@ run: $(OUT_FILE)
 	./$(OUT_FILE) $(RUN_ARGS)
 
 clean:
-	$(RM) *.o *~ $(OUT_FILE)
+	RM *.o *~ $(OUT_FILE)
