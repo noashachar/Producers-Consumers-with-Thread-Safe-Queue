@@ -27,19 +27,21 @@ For parallelism, I used `pthreads`.
 
 The following format is expected (non-numeric chars are ignored):
 ```
-PRODUCER ID 1
-number of products = [number]
-queue size = [number]
-PRODUCER ID 2
-number of products = [number]
-queue size = [number]
+PRODUCER ID: 1
+number of products: [number]
+queue size: [number]
+
+PRODUCER ID: 2
+number of products: [number]
+queue size: [number]
+
 …
-…
-…
-PRODUCER ID n
-number of products = [number]
-queue size = [number]
-Co-Editor Queue Size = [number]
+
+PRODUCER ID: [n]
+number of products: [number]
+queue size: [number]
+
+Co-Editor Queue Size: [number]
 ```
 
 ## How to Run
